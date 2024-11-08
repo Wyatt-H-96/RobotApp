@@ -1,0 +1,57 @@
+/* Reset margin and padding to avoid unwanted spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    background-color: black; /* Black background */
+    color: white;            /* White text color */
+    font-family: Arial, sans-serif; /* Font style */
+    height: 100vh;           /* Full height of the viewport */
+    display: flex;           /* Flexbox layout */
+    flex-direction: column;  /* Stack elements vertically */
+    align-items: center;     /* Center items horizontally */
+    justify-content: flex-start; /* Align items to the top */
+}
+
+/* Heading styling */
+h1 {
+    color: white;
+    text-align: center;      /* Center the text horizontally */
+    margin-top: 20px;         /* Add space between the top of the page and the heading */
+    margin-bottom: 20px;      /* Space between heading and button container */
+    font-size: 2rem;          /* Optional: adjust the size of the heading */
+}
+
+/* Button container styling */
+.button-container {
+    display: flex;            /* Use flexbox for button container */
+    flex-direction: column;   /* Stack buttons vertically */
+    position: fixed;          /* Fix the button container to the top-left corner */
+    top: 20px;                /* Add some space from the top */
+    left: 20px;               /* Align buttons to the left of the page */
+    gap: 10px;                /* Space between buttons */
+}
+
+/* Button styling */
+.button-container button {
+    color: black;
+    background-color: white;  /* White background for buttons */
+    padding: 15px 30px;        /* Button padding */
+    width: 150px;              /* Fixed width for all buttons */
+    height: 50px;              /* Fixed height for all buttons */
+    margin: 0;                 /* No margin between buttons (gap handled by flexbox) */
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;           /* Font size for buttons */
+    font-weight: 700;          /* Bold text */
+    cursor: pointer;          /* Change cursor on hover */
+}
+
+/* Button hover effect */
+.button-container button:hover {
+    background-color: greenyellow;  /* Change color when hovering over the buttons */
+}
