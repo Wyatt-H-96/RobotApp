@@ -7,7 +7,6 @@
 
 /* Body styling */
 body {
-    background-color: black; /* Black background */
     color: white;            /* White text color */
     font-family: Arial, sans-serif; /* Font style */
     height: 100vh;           /* Full height of the viewport */
@@ -15,16 +14,35 @@ body {
     flex-direction: column;  /* Stack elements vertically */
     align-items: center;     /* Center items horizontally */
     justify-content: flex-start; /* Align items to the top */
+    background: linear-gradient(45deg, black, blue); /* Diagonal gradient from orange to pink */
+    background-size: 400% 400%; /* To create a larger gradient area */
+    animation: gradientBackground 10s ease infinite; /* Animation for gradual change*/
 }
 
-/* Heading styling */
+@keyframes gradientBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
 h1 {
     color: white;
     text-align: center;      /* Center the text horizontally */
     margin-top: 20px;         /* Add space between the top of the page and the heading */
     margin-bottom: 20px;      /* Space between heading and button container */
-    font-size: 2rem;          /* Optional: adjust the size of the heading */
+    font-size: 2rem;         /* Optional: adjust the size of the heading */
+    text-decoration: underline;
+    text-decoration-color: whitesmoke;
+    text-decoration-thickness: 5px;
 }
+
 
 /* Button container styling */
 .button-container {
@@ -49,9 +67,29 @@ h1 {
     font-size: 1rem;           /* Font size for buttons */
     font-weight: 700;          /* Bold text */
     cursor: pointer;          /* Change cursor on hover */
+    box-shadow: 0 0 10px 3px greenyellow /* Glowing effect */
 }
 
 /* Button hover effect */
 .button-container button:hover {
-    background-color: greenyellow;  /* Change color when hovering over the buttons */
+    background-color: orange;  /* Change color when hovering over the buttons */
+}
+
+.app-buttons
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+    width: 150px;
+    height: 50px;
+    font-size: 1rem;
+    font-weight: 700;
+    
+}
+
+.app-buttons:hover
+{
+    background-color: orange;
 }
