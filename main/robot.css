@@ -14,7 +14,7 @@ body {
     flex-direction: column;  /* Stack elements vertically */
     align-items: center;     /* Center items horizontally */
     justify-content: flex-start; /* Align items to the top */
-    background: linear-gradient(45deg, black, blue); /* Diagonal gradient from orange to pink */
+    background: linear-gradient(45deg, red, black, blue); /* Diagonal gradient from orange to pink */
     background-size: 400% 400%; /* To create a larger gradient area */
     animation: gradientBackground 10s ease infinite; /* Animation for gradual change*/
 }
@@ -92,5 +92,32 @@ h1 {
 .app-buttons:hover
 {
     background-color: orange;
+}
+
+.input-left
+{
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+    
+}
+
+.input-left::placeholder
+{
+    text-align: center;
+    font-weight: 700;
+    color: black;
+}
+
+.input-left:not(:placeholder-shown)
+{
+    color: black;
+}
+
+.input-right
+{
+    display: flex;
+    justify-content: center;
+    margin: 5px;
 }
 
