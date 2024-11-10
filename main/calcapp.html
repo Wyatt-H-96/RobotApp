@@ -11,20 +11,20 @@
     <title>RoboLink</title>
         
         
-        <body>
+        <body class="appbody">
             <h1>Absolute Calculator</h1>
        
             <div class="button-container">
-                <a id="a-button" href="/main/robot.html">
+                <a id="a-button" href="/robot.html">
                     <button>Home</button>
                 </a>
-                <a id="a-button" href="/main/apps.html">
+                <a id="a-button" href="/apps.html">
                     <button>App's</button>
                 </a>
-                <a id="a-button" href="/main/cells.html">
+                <a id="a-button" href="/cells.html">
                     <button>Cells</button>
                 </a>
-                <a id="a-button" href="/main/reference.html">
+                <a id="a-button" href="/reference.html">
                     <button>Reference</button>
                 </a>
                 <button>Button 5</button>
@@ -33,31 +33,75 @@
             <div class="calc">
                 <table>
                     <tr>
-                        <th>COMMAND</th>
-                        <th>CURRENT</th>
+                        <th class="head1">COMMAND</th>
+                        <th class="head2">CURRENT</th>
+                        <th class="head3"> DIFFERENCE OUTPUT</th>
                     </tr>
                     <tr>
                         
                         <td>
-                           <input type="text" class=" input-left" id="s1" placeholder="S-AXIS">
-                            <input type="text" class="input-left" id="l1" placeholder="L-AXIS">
-                            <input type="text" class="input-left" id="u1" placeholder="U-AXIS">
-                            <input type="text" class="input-left" id="r1" placeholder="R-AXIS">
-                            <input type="text" class="input-left" id="b1"placeholder="B-AXIS">
-                            <input type="text" class="input-left" id="t1" placeholder="T-AXIS">
+                           <input autocomplete="off" type="text" class=" input-left" id="s1" placeholder="S-AXIS">
+                            <input autocomplete="off" type="text" class="input-left" id="l1" placeholder="L-AXIS">
+                            <input autocomplete="off" type="text" class="input-left" id="u1" placeholder="U-AXIS">
+                            <input autocomplete="off" type="text" class="input-left" id="r1" placeholder="R-AXIS">
+                            <input autocomplete="off" type="text" class="input-left" id="b1" placeholder="B-AXIS">
+                            <input autocomplete="off" type="text" class="input-left" id="t1" placeholder="T-AXIS">
                         </td>
                         
                         <td>
-                            <input type="text" class="input-right" id="s2">
-                            <input type="text" class="input-right" id="l2">
-                            <input type="text" class="input-right" id="u2">
-                            <input type="text" class="input-right" id="r2">
-                            <input type="text" class="input-right" id="b2">
-                            <input type="text" class="input-right" id="t2">
+                            <input autocomplete="off" type="text" class="input-right" id="s2" placeholder="S-AXIS">
+                            <input autocomplete="off" type="text" class="input-right" id="l2" placeholder="L-AXIS">
+                            <input autocomplete="off" type="text" class="input-right" id="u2" placeholder="U-AXIS">
+                            <input autocomplete="off" type="text" class="input-right" id="r2" placeholder="R-AXIS">
+                            <input autocomplete="off"  type="text" class="input-right" id="b2" placeholder="B-AXIS">
+                            <input autocomplete="off" type="text" class="input-right" id="t2" placeholder="T-AXIS">
+                        </td>
+
+                        <td class="head3">
+                            <p class="head3" id="p1">S-Output: <span id="data1">[***]</span></p>
+                            <p class="head3" id="p1">L-Output: <span id="data2">[***]</span></p>
+                            <p class="head3" id="p1">U-Output: <span id="data3">[***]</span></p>
+                            <p class="head3" id="p1">R-Output: <span id="data4">[***]</span></p>
+                            <p class="head3" id="p1">B-Output: <span id="data5">[***]</span></p>
+                            <p class="head3" id="p1">T-Output: <span id="data6">[***]</span></p>
                         </td>
                     </tr>
                 </table>
             </div>
+
+            <div class="Adata">
+                <table>
+                    <th>ABSOLUTE DATA 
+                    <p>"HOME POSITION"</p></th>
+                    <th> ENTER THIS NEW DATA
+                        <p>IN HOME POSITION</p>
+                    </th>
+                    <tr class="table2">
+                        <td>
+                            <input autocomplete="off" type="text" class="absolute" id="s" placeholder="S-AXIS">
+                            <input autocomplete="off" type="text" class="absolute" id="l" placeholder="L-AXIS">
+                            <input autocomplete="off"  type="text" class="absolute" id="u" placeholder="U-AXIS">
+                            <input autocomplete="off"  type="text" class="absolute" id="r" placeholder="R-AXIS">
+                            <input autocomplete="off"  type="text" class="absolute" id="b" placeholder="B-AXIS">
+                            <input autocomplete="off" type="text" class="absolute" id="t" placeholder="T-AXIS">
+                        </td>
+                        <td>
+                            <p class="head3" id="p1">S: <span id="sum1">[***]</span></p>
+                            <p class="head3" id="p2">L: <span id="sum2">[***]</span></p>
+                            <p class="head3" id="p2">U: <span id="sum3">[***]</span></p>
+                            <p class="head3" id="p2">R: <span id="sum4">[***]</span></p>
+                            <p class="head3" id="p2">B: <span id="sum5">[***]</span></p>
+                            <p class="head3" id="p2">T: <span id="sum6">[***]</span></p>
+                        </td>
+                    </tr>
+                </table>
+                <h2>
+                    <button class="calcbutton" id="calculateBtn">Calculate</button>
+                </h2>
+            </div>
+
+
+            <h2></h2>
         
         </body>
     

@@ -7,29 +7,21 @@
 
 /* Body styling */
 body {
+    background-color: black;
     color: white;            /* White text color */
-    font-family: Arial, sans-serif; /* Font style */
+    font-family: Georgia, 'Times New Roman', Times, serif; /* Font style */
     height: 100vh;           /* Full height of the viewport */
     display: flex;           /* Flexbox layout */
     flex-direction: column;  /* Stack elements vertically */
     align-items: center;     /* Center items horizontally */
     justify-content: flex-start; /* Align items to the top */
-    background: linear-gradient(45deg, red, black, blue); /* Diagonal gradient from orange to pink */
     background-size: 400% 400%; /* To create a larger gradient area */
-    animation: gradientBackground 10s ease infinite; /* Animation for gradual change*/
+    
 }
 
-@keyframes gradientBackground {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-}
+
+
+
 
 
 h1 {
@@ -37,11 +29,22 @@ h1 {
     text-align: center;      /* Center the text horizontally */
     margin-top: 20px;         /* Add space between the top of the page and the heading */
     margin-bottom: 20px;      /* Space between heading and button container */
-    font-size: 2rem;         /* Optional: adjust the size of the heading */
+    font-size: 3rem;         /* Optional: adjust the size of the heading */
     text-decoration: underline;
     text-decoration-color: whitesmoke;
     text-decoration-thickness: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-shadow: 
+        3px 3px 5px rgba(0, 0, 0, 1.3),  /* Shadow 1 */
+        6px 6px 10px rgba(0, 0, 0, 1.2), /* Shadow 2 */
+        9px 9px 15px rgba(0, 0, 0, 1.1); /* Shadow 3 */
+        
+   
+
 }
+
+
+
 
 
 /* Button container styling */
@@ -56,6 +59,7 @@ h1 {
 
 /* Button styling */
 .button-container button {
+    font-family: Georgia, 'Times New Roman', Times, serif;
     color: black;
     background-color: white;  /* White background for buttons */
     padding: 15px 30px;        /* Button padding */
@@ -65,7 +69,8 @@ h1 {
     border: none;
     border-radius: 5px;
     font-size: 1rem;           /* Font size for buttons */
-    font-weight: 700;          /* Bold text */
+    font-weight: 700;  
+    font-size: large;        /* Bold text */
     cursor: pointer;          /* Change cursor on hover */
     box-shadow: 0 0 10px 3px greenyellow /* Glowing effect */
 }
@@ -94,6 +99,16 @@ h1 {
     background-color: orange;
 }
 
+
+.appbody
+{
+    background-color: black;
+}
+
+
+/* Left collumn input */
+
+
 .input-left
 {
     display: flex;
@@ -114,10 +129,153 @@ h1 {
     color: black;
 }
 
+
+/* Right collumn input*/
 .input-right
 {
     display: flex;
     justify-content: center;
     margin: 5px;
 }
+
+.input-right::placeholder
+{
+    text-align: center;
+    font-weight: 700;
+    color: black;
+}
+
+
+.input-right:not(:placeholder-shown)
+{
+    color: black;
+}
+
+
+/* Calc Outputs */
+
+.head3
+{
+    padding-left: 50px;
+    margin: 5px;
+}
+
+#p1
+{
+    padding-right: 50px;
+}
+
+.calcbutton
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+    width: 100px;
+    height: 50px;
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 10px;
+    
+}
+
+.calcbutton:hover
+{
+    background-color: orange;
+}
+
+
+.Adata
+{
+ margin-right: 275px;
+  
+}
+
+
+
+.absolute
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 5px;
+    
+}
+
+.absolute::placeholder
+{
+    text-align: center;
+    font-weight: 700;
+    color: black;
+}
+
+
+.absolute:not(:placeholder-shown)
+{
+    color: black;
+}
+
+.row1
+{
+    display:flex;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    
+    
+}
+
+.cell
+{
+    display: flex;            /* Use flexbox for button container */   /* Stack buttons vertically */
+    width: 200px;
+    height: 200px;
+    margin-top: 25px;
+    margin-right: 50px;
+
+}
+
+.cellbtn
+{
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    width: 130px;
+    height: 75px;
+    margin: 5px;
+    border-radius: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.cellbtn:hover
+{
+    background-color: orange;
+}
+
+.yaskawahome
+{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    
+    
+}
+
+.yaskawahome:hover
+{
+    color: orange;
+}
+
+
+
+
+
+
+
 
