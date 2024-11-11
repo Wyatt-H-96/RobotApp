@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="robot.css">
+    <script defer src="robot.js"></script>
+
+    <title>RoboLink</title>
+        
+        
+        <body>
+            <h1 class="robolink">
+            OCTOBOT
+            </h1>
+       
+            <div class="button-container">
+                <a id="a-button" href="/robot.html">
+                    <button>Home</button>
+                </a>
+                <a id="a-button" href= "/apps.html">
+                    <button>App's</button>
+                </a>
+                <a id="a-button" href="/cells.html">
+                    <button>Cells</button>
+                </a>
+                <a id="a-button" href="/reference.html">
+                    <button>Reference</button>
+                </a>
+                <button>Button 5</button>
+            </div>
+            
+
+            <div class="touchuphead">
+                WELD TOUCHUPS
+            </div>
+            
+            <div class="notediv">
+                <textarea id="notepad" placeholder="TYPE HERE....."></textarea>
+            </div>
+
+            <div class="weld-buttons">
+                <button class="save" id="octobot-save">Save</button>
+                <button class="clear" id="octobot-clear">Clear</button>
+              </div>
+
+              <div class="upload-container">
+                <h2>S.A.P REQUESTS</h2>
+                <form id="form" action="sap.py" method="POST" enctype="multipart/form-data">
+                  <input id="file-input" type="file" name="pdfFile" accept=".pdf" required>
+                  <br>
+                  <button id="upload-pdf" type="submit">Upload PDF</button>
+                </form>
+              </div>
+
+              <!-- PDF download button -->
+               
+              <div class="download-container">
+                <h3>DOWNLAD SAP FILES</h3>
+                <button class="download" id="sap-download">DOWNLOAD</button>
+              </div>
+
+           
+        
+        </body>
+    
+</head>
