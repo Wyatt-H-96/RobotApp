@@ -10,7 +10,8 @@ body {
     background-color: black;
     color: white;            /* White text color */
     font-family: Georgia, 'Times New Roman', Times, serif; /* Font style */
-    height: 100vh;           /* Full height of the viewport */
+    height: 100%;
+    width: 100%;           /* Full height of the viewport */
     display: flex;           /* Flexbox layout */
     flex-direction: column;  /* Stack elements vertically */
     align-items: center;     /* Center items horizontally */
@@ -20,7 +21,7 @@ body {
 }
 
 
-<div>
+
 
 
 
@@ -31,6 +32,7 @@ h1 {
     margin-bottom: 20px;      /* Space between heading and button container */
     font-size: 3rem;         /* Optional: adjust the size of the heading */
     text-decoration: underline;
+    margin-left: 55px;
     text-decoration-color: whitesmoke;
     text-decoration-thickness: 5px;
     font-family: Georgia, 'Times New Roman', Times, serif;
